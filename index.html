@@ -1283,13 +1283,14 @@
     const eyeLineColor = isBlackSkin ? "#f8fafc" : (isElder ? "#cbd5e1" : "#09090b");
 
     let headGear = "";
-    if (isVillain) {
+    if (isWoman) {
       headGear = `
-        <path d="M35 16 L31 3 L43 13 L48 2 L53 13 L65 3 L61 16 Z" fill="#18181b" stroke="#09090b" stroke-width="1.1"/>
-        <path d="M36 15 L32.5 4.5 L42 13 Z" fill="${accent}"/>
-        <path d="M60 15 L63.5 4.5 L54 13 Z" fill="${accent}"/>
+        <!-- Woman Long Flowing Hair & Ribbon -->
+        <path d="M34 19 C34 8, 61 8, 61 19 C59 13, 53 11, 47 11 C41 11, 36 13, 34 19 Z" fill="${hairColor}"/>
+        <path d="M35 17 C26 21, 23 33, 27 45 C30 39, 32 31, 36 25 Z" fill="${hairColor}"/>
+        <rect x="35.5" y="15" width="24.5" height="4.2" rx="2" fill="${accent}" stroke="#09090b" stroke-width="0.7"/>
       `;
-    } else if (isWoman) {
+    } else if (isGirlChild) {
       headGear = `
         <!-- Woman Long Flowing Hair & Ribbon -->
         <path d="M34 19 C34 8, 61 8, 61 19 C59 13, 53 11, 47 11 C41 11, 36 13, 34 19 Z" fill="${hairColor}"/>
